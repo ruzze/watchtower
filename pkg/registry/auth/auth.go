@@ -154,7 +154,7 @@ func GetChallengeURL(imageRef ref.Named) url.URL {
 	host, _ := helpers.GetRegistryAddress(imageRef.Name())
 
 	URL := url.URL{
-		Scheme: "https",
+		Scheme: "http",
 		Host:   host,
 		Path:   "/v2/",
 	}
